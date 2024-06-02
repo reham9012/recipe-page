@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+}
+
+.container{
+    margin: auto;
+    width: 50%;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    
+}
+ section{
+    width: 90%;
+    margin: 80px auto;
+    
+} 
+.img img{
+    max-width: 100%;
+    padding: 30px 0px;
+   border-radius: 20px;   
+}
+section h1 ,p{
+    padding-bottom: 20px;
+    
+}
+.simple{
+    color: black;
+}
+
+section .preparation-time{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.preparation-time h3{
+    padding: 20px;
+    color: hsl(345, 49%, 35%);
+}
+.preparation-time ul {
+    padding: 2px 50px;
+}
+.preparation-time ul li{
+    padding-bottom: 10px;
+    color:hsl(30, 10%, 34%);
+}
+hr{
+    color: hsl(30, 18%, 87%);
+}
+.Instructions ol {
+    padding-left: 15px;
+}
+.Instructions ol li{
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+.Instructions span ,.preparation-time span{
+    color:hsl(0, 3%, 32%);
+    font-weight: bold;
+}
+.ingredients,.Instructions,.Nutrition {
+    padding: 20px 0;
+    color: hsl(42, 6%, 35%);
+}
+section p {
+    
+    color: hsl(42, 6%, 35%);
+}
+.ingredients ul{
+    margin-left: 25px;
+}
+.ingredients ul li{
+    padding: 5px 10px;
+}
+section h1{
+    color: hsl(345, 49%, 35%);
+}
+.list{
+    padding: 5px 20px;
+}
+
+.list .p{
+    
+    display: flex;
+    justify-content: space-between;
+   padding: 5px 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.list .p:last-child{
+    border-bottom: 0;
+}
+.list .p p:nth-child(2){
+    color: rgb(161, 84, 36);
+    font-weight: 700;
+    
+}
+.list .amount{
+    margin-right: 200px;
+}
+
+
+
+@media  screen and (max-width:375px) {
+    .container{
+        width: 100%;
+    }
+    body{
+        background: none;
+    }
+    section{
+       margin: 0;
+        width: 100%;
+    }
+    .img img{
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+    section h1,p,.preparation-time,.Instructions ol li ,.Nutrition p{
+        margin: 20px 30px 20px 30px;
+        padding: 0;
+    }
+    
+    .preparation-time{
+        margin: 20px 30px 0px 30px;
+        padding: 0;
+    }
+    .ingredients ul{
+        padding: 0px 30px 20px 30px;
+    }
+ hr{
+        width: 80%;
+        margin: auto;
+    }
+    
+}
